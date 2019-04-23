@@ -16,5 +16,13 @@
       <input type="radio" name="operador" value="3" > división <br>
       <input type="submit" value="Calcular">
     </form>
+    <br>
+    <form action="guardar.php" method="post">
+      <input type="text" name="nombre" placeholder="Nombre de Estudiante"><br>
+      <input type="text" name="paterno" placeholder="Nombre de paterno"><br>
+      <input type="text" name="materno" placeholder="Nombre de materno"><br>
+      <input type="submit"  value="Guardar">
+
+    </form>
   </body>
 </html>
