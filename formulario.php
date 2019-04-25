@@ -39,6 +39,7 @@
          <td><?php echo $fila['nombre']; ?></td>
          <td><?php echo $fila['paterno']; ?></td>
          <td><?php echo $fila['materno']; ?></td>
+         <td><a href="actualizar.php?id= <?php echo $fila['id'] ?>">EDITAR</a></td>
        </tr>
      <?php } ?>
     </table>
