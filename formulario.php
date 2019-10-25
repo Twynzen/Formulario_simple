@@ -30,6 +30,8 @@
       <th>nombre</th>
       <th>apellido paterno</th>
       <th>apellido materno</th>
+      <th></th>
+      <th></th>
       <?php
       $sel = $con ->query("SELECT * FROM estudiantes ");
       while ($fila = $sel -> fetch_assoc()) {
@@ -40,6 +42,7 @@
          <td><?php echo $fila['paterno']; ?></td>
          <td><?php echo $fila['materno']; ?></td>
          <td><a href="actualizar.php?id= <?php echo $fila['id'] ?>">EDITAR</a></td>
+         <td><a href="borrar.php?id=<?php echo $fila['id'] ?>">Eliminar</a></td>
        </tr>
      <?php } ?>
     </table>

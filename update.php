@@ -7,7 +7,7 @@ $materno = $_POST['materno'];
 
 
 $up = $con -> query ("UPDATE estudiantes SET nombre='$nombre', paterno ='$paterno', materno='$materno'
-   WHERE id= '$id' ");
+   WHERE id= '$id' ");//sentencia
 if($up){
   echo "<script>
   location.href='formulario.php';

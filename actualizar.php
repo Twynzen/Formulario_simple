@@ -1,7 +1,7 @@
 <?php include 'conexion.php';
 $id = $_REQUEST['id'];
 
-$sel = $con -> query("SELECT * FROM estudiantes WHERE id='$id'");
+$sel = $con -> query("SELECT * FROM estudiantes WHERE id='$id'");//sentencia
 if ($fila = $sel -> fetch_assoc()) {
 }
  ?>

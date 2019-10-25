@@ -5,7 +5,7 @@ include 'conexion.php';
 $nombre = $_POST['nombre'];
 $paterno = $_POST['paterno'];
 $materno = $_POST['materno'];
-$ins = $con -> query("INSERT INTO estudiantes (id, nombre, paterno, materno) VALUES('','$nombre','$paterno','$materno')");
+$ins = $con -> query("INSERT INTO estudiantes (id, nombre, paterno, materno) VALUES('','$nombre','$paterno','$materno')");//sentencia
 if ($ins){
   echo "guardo";
 }else {
